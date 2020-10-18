@@ -1,0 +1,6 @@
+image		xy_band		image_band	Nearest		iteartions
+baboon		25		250		125		35		
+
+bird		100		250		185		50
+
+flower		100		250		170		50
