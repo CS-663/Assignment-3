@@ -39,10 +39,10 @@ tic;
 seg_image = myMeanShiftSegmentation(input, xy_band, image_band, noOfNearest, iterations);
 
 % scatter plot for the input image
-colorcloud(contrast_streching(input));
+% colorcloud(contrast_streching(input));
 
 % Scatter plot for the Segmented image
-colorcloud(seg_image);
+% colorcloud(seg_image);
 
 
 figure;
