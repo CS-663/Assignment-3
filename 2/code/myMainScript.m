@@ -13,7 +13,7 @@ tic;
  flower = im2double(imread('../data/flower.jpg'));
  
  % Setting image for input['bird' , 'flower' , 'baboon']
- input_name = 'baboon';
+ input_name = 'flower';
  
  if strcmp(input_name, 'bird')
      xy_band = 125.0;
@@ -43,7 +43,6 @@ seg_image = myMeanShiftSegmentation(input, xy_band, image_band, noOfNearest, ite
 
 % Scatter plot for the Segmented image
 % colorcloud(seg_image);
-
 
 figure;
 subplot(1, 2, 1);
