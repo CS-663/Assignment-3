@@ -37,7 +37,7 @@ ax1 = axes();
 hold on;
 [r, c] = find(Icornr);
 imshow(img, 'Parent', ax1);
-plot(ax1, c, r, '+');
+plot(ax1, c, r, 'g+');
 axis equal tight on;
 title('Harris Corner overlayed on Original');
 colorbar;
