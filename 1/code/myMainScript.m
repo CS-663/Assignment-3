@@ -26,10 +26,20 @@ axis equal tight on;
 title('Another Eigenvalue');
 colorbar;
 
-figure('Name', 'Harris Corner Image');
+figure('Name', 'Harris Corner Mask');
 imshow(Icornr);
 axis equal tight on;
-title('Harris Corner Image');
+title('Harris Corner Mask');
+colorbar;
+
+figure('Name', 'Harris Corner overlayed on Original Image');
+ax1 = axes();
+hold on;
+[r, c] = find(Icornr);
+imshow(img, 'Parent', ax1);
+plot(ax1, c, r, '+');
+axis equal tight on;
+title('Harris Corner overlayed on Original');
 colorbar;
 
 toc;
